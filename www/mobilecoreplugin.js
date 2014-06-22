@@ -785,9 +785,4 @@ MobilecorePlugin.prototype.setDirectToMarketReadyListener = function(successCall
 
 
 //-------------------------------------------------------------------
-if(!window.plugins) {
-    window.plugins = {};
-}
-if (!window.plugins.MobilecorePlugin) {
-    window.plugins.MobilecorePlugin = new MobilecorePlugin();
-}
+module.exports = new MobilecorePlugin();
